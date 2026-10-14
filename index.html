@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Online Math Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; line-height: 1.6; }
+        .form-section { margin-bottom: 20px; }
+        label { font-weight: bold; }
+        .options { margin-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>Online Math Quiz</h1>
+    <p>Please complete all sections of the test below.</p>
+
+    <!-- START OF MATH TEST FORM -->
+    <form action="#" method="POST">
+
+        <!-- Name Field -->
+        <div class="form-section">
+            <label for="student-name">Student Name:</label><br>
+            <input type="text" id="student-name" name="studentName" required placeholder="Enter your full name">
+        </div>
+
+        <hr>
+
+        <!-- Multiple Choice Question 1 -->
+        <div class="form-section">
+            <p><strong>Question 1:</strong> Solve for x: 5 &times; x = 20. What is the value of x?</p>
+            <div class="options">
+                <input type="radio" id="q1-a" name="q1" value="2">
+                <label for="q1-a">2</label><br>
+                <input type="radio" id="q1-b" name="q1" value="4">
+                <label for="q1-b">4</label><br>
+                <input type="radio" id="q1-c" name="q1" value="10">
+                <label for="q1-c">10</label>
+            </div>
+        </div>
+
+        <!-- Multiple Choice Question 2 -->
+        <div class="form-section">
+            <p><strong>Question 2:</strong> Which symbol makes this statement true? 15 &ne; 10 + 5 &divide; 5</p>
+            <div class="options">
+                <input type="radio" id="q2-a" name="q2" value="true">
+                <label for="q2-a">True (The statement is true because 15 is not equal to 11)</label><br>
+                <input type="radio" id="q2-b" name="q2" value="false">
+                <label for="q2-b">False (The statement is mathematically incorrect)</label>
+            </div>
+        </div>
+
+        <!-- Multiple Choice Question 3 -->
+        <div class="form-section">
+            <p><strong>Question 3:</strong> Calculate the square root of 49. (Hint: &radic;49)</p>
+            <div class="options">
+                <input type="radio" id="q3-a" name="q3" value="6">
+                <label for="q3-a">6</label><br>
+                <input type="radio" id="q3-b" name="q3" value="7">
+                <label for="q3-b">7</label><br>
+                <input type="radio" id="q3-c" name="q3" value="8">
+                <label for="q3-c">8</label>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Word Problem with Multiline Text Area -->
+        <div class="form-section">
+            <p><strong>Word Problem:</strong> Sarah has 12 apples. She gives &frac14; of them to her brother and 3 to her mother. How many apples does she have left? Show your step-by-step work in the box below.</p>
+            <label for="word-problem-answer">Your Answer and Work:</label><br>
+            <textarea id="word-problem-answer" name="wordProblem" rows="6" cols="50" placeholder="Type your calculations and final answer here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-section">
+            <button type="submit">Submit Test</button>
+        </div>
+
+    </form>
+    <!-- END OF MATH TEST FORM -->
+
+</body>
+</html>
